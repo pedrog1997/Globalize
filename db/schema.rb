@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_06_140358) do
+ActiveRecord::Schema.define(version: 2018_06_07_142453) do
+
+  create_table "article_translations", force: :cascade do |t|
+    t.integer "article_id", null: false
+    t.string "locale", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "title"
+    t.text "body"
+    t.index ["article_id"], name: "index_article_translations_on_article_id"
+    t.index ["locale"], name: "index_article_translations_on_locale"
+  end
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
