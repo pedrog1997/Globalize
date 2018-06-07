@@ -1,0 +1,25 @@
+es:
+  activerecord:
+    attributes:
+      article:
+        title: "Título"
+        body: "Cuerpo"
+  forms:
+    messages:
+      success: "Operación satisfactoria"
+    buttons:
+      edit: "Editar"
+      submit: "Listo"
+  menu:
+    new_article: "Añadir un artículo nuevo"
+    languages:
+      lang: "Idioma"
+      es: "Español"
+      en: "Inglés"
+  articles:
+    index:
+      title: "Lista de artículos"
+    edit:
+      title: "Añadir artículo"
+    new:
+      title: "Artículo nuevo"

@@ -17,8 +17,27 @@
       </div>
 
       <ul class="nav navbar-nav navbar-left">
-        <li><%= link_to 'Add new article', new_article_path %></li>
+        <li><%= link_to t('menu.new_article'), new_article_path %></li>
       </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <%= t('menu.languages.lang') %>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="dropdown-item">
+
+              <%= link_to t('menu.languages.en'), change_locale_path(:en) %>
+            </li>
+            <li class="dropdown-item">
+              <%= link_to t('menu.languages.ru'), change_locale_path(:ru) %>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
     </div>
     </div>
 
